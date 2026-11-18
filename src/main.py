@@ -6,6 +6,7 @@ from utils.ingredients_menu import MENU, resources
 import sys
 
 def coffee_machine_app():
+
     print(logo)
     user_input = input("What would you like? (espresso/latte/cappuccino): or type 'off' to stop ")
     if user_input == 'off':
