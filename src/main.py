@@ -6,7 +6,7 @@ from utils.ingredients_menu import MENU, resources
 import sys
 
 def coffee_machine_app():
-
+    print(logo)
     user_input = input("What would you like? (espresso/latte/cappuccino): or type 'off' to stop ")
     if user_input == 'off':
         sys.exit(0)
@@ -23,5 +23,4 @@ def coffee_machine_app():
     coffee_machine_app()
 
 if __name__ == '__main__':
-    print(logo)
     coffee_machine_app()
