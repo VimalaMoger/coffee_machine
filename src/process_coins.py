@@ -11,14 +11,9 @@ class ProcessCoins:
         for key in valid_coins.keys():
             while flag:
                 try:
-                    coin_in_cents =  int(input(f"Please insert ({valid_coins[key]} in cents): "))
-                    if key == coin_in_cents:
-                        how_many = int(input(f"How many {valid_coins[key]}s do you have? "))
-                        self.total_payment += coin_in_cents * how_many
-                        break
-                    else:
-                        print(f"Invalid coin denomination. Please insert {key}.")
-                        flag = True
+                    how_many = int(input(f"How many {valid_coins[key]}s do you have? "))
+                    self.total_payment += key * how_many
+                    break
                 except ValueError:
                     print("Please enter a valid number.")
                     flag = True
